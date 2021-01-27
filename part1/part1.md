@@ -21,8 +21,28 @@
 12. asdf
 <!-- ----- -->
 13. 
-- A. student["name"]
-- B. student["Grad Year"]
-- C. student.greeting()
-- D. student["Favorite Teacher"]["name"]
-- E. student.courseLoad[0]
+    1.  A. student["name"]
+    2.  B. student["Grad Year"]
+    3.  C. student.greeting()
+    4.  D. student["Favorite Teacher"]["name"]
+    5.  student.courseLoad[0]
+
+14. 
+    1.  A. '32'
+    2.  B. 1
+    3.  C. 3
+    4.  D. '3null'
+    5.  E. 4
+    6.  F. 0
+    7.  G. '3undefined'
+    8.  H. NaN
+15. 
+    1.  A. true
+    2.  B. false
+    3.  C. true
+    4.  D. false
+    5.  E. false
+    7.  F. 0
+    8.  G. true
+
+16. `==` will try to convert two operands to the same type, then compare the value; `===` will check the type and value of the two operands.
