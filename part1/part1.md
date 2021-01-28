@@ -45,4 +45,16 @@
     7.  F. 0
     8.  G. true
 
-16. `==` will try to convert two operands to the same type, then compare the value; `===` will check the type and value of the two operands.
+16. `==` will convert two operands to have the same type before comparison; `===` is a more strict comparison operator where both value and type would be compared.
+
+17. The code would print "How are you?". For the first condition, `2 == true`, it converts `true` to `1`, thus the comparison is `false.
+
+18. ...
+
+19. In this case, `doSomething` is passed into `modifyArray` as a argument. 
+
+- When execution, the for loop would be `newArr.push(doSomething(array[i], function (x) {return x*2}));`. `doSomething` would be called with first argument `array[i]` and second argument`function (x) {return x * 2}` (an anonymous function). 
+
+- Inside `doSomething`, the anonymous function receives parameters `num + 1` and returns `(num + 1) * 2`.
+ 
+-  Back to for loop, the program puts `newArr` the return value, `(num + 1) * 2`. So, with input `[1, 2, 3]`, the program outputs `[4, 6, 8]`.
