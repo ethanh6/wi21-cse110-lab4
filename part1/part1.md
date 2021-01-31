@@ -45,7 +45,7 @@
     -  B. student["Grad Year"]
     -  C. student.greeting()
     -  D. student["Favorite Teacher"]["name"]
-    -  student.courseLoad[0]
+    -  E. student.courseLoad[0]
 
 14.  
     -  A. '32'
