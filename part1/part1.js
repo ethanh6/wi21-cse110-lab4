@@ -1,9 +1,9 @@
 function discountPrices (prices, discount) {
-    const discounted = [];
-    const finalPrice = 0;
+    var discounted = [];
+    var finalPrice = 0;
 
-    for (let i=0; i< prices.length; i++) {
-        const discountedPrice = prices[i] * (1 - discount);
+    for (var i=0; i< prices.length; i++) {
+        var discountedPrice = prices[i] * (1 - discount);
         finalPrice = Math.round(discountedPrice * 100) / 100;
         discounted.push(finalPrice);
     }
@@ -15,7 +15,7 @@ function discountPrices (prices, discount) {
     return discounted;
 }
 
-// console.log(discountPrices([100,200,300], .5));
+console.log(discountPrices([100,200,300], .5));
 
 let student = {
     name: "sarah",
@@ -60,7 +60,7 @@ function doSomething (num, callback) {
     return callback(num + 1);
 }
 
-let abc = modifyArray([1,2,3], doSomething);
+// let abc = modifyArray([1,2,3], doSomething);
 // console.log(abc);
 
 function printNums() {
@@ -70,4 +70,4 @@ function printNums() {
     console.log(4);
 }
 
-printNums();
+// printNums();
