@@ -16,3 +16,4 @@ A simple way to fix it is to convert the inputs from type `String` to `Number`.
 6. Apache
 7. Tue, 26 Jan 2021 22:14:13 GMT
 8. application/json
+9. `fetch` method inside `fetchData()` method
