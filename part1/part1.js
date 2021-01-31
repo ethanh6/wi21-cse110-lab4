@@ -38,13 +38,13 @@ let student = {
 // console.log(1 == true);
 // console.log(typeof (1 == true));
 
-// if (2 == true) {
-//     console.log("Hello!");
-// } else if (2) {
-//     console.log("How are you?");
-// } else {
-//     console.log("Goodbye");
-// }
+if (2 == true) {
+    console.log("Hello!");
+} else if (2) {
+    console.log("How are you?");
+} else {
+    console.log("Goodbye");
+}
 
 function modifyArray(array, callback) {
     const newArr = [];
