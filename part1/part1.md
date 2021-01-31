@@ -40,41 +40,59 @@
     - If the assignement is running successfully, ignoring all errors, line 14 will return `[]` because `discounted` is declared as a `const` and its value will not change.
 
 <!-- ----- -->
-1.  
-    1.  A. student["name"]
-    2.  B. student["Grad Year"]
-    3.  C. student.greeting()
-    4.  D. student["Favorite Teacher"]["name"]
-    5.  student.courseLoad[0]
+13.  
+    -  A. student["name"]
+    -  B. student["Grad Year"]
+    -  C. student.greeting()
+    -  D. student["Favorite Teacher"]["name"]
+    -  student.courseLoad[0]
 
-2.  
-    1.  A. '32'
-    2.  B. 1
-    3.  C. 3
-    4.  D. '3null'
-    5.  E. 4
-    6.  F. 0
-    7.  G. '3undefined'
-    8.  H. NaN
-3.  
-    1.  A. true
-    2.  B. false
-    3.  C. true
-    4.  D. false
-    5.  E. false
-    6.  F. 0
-    7.  G. true
+14.  
+    -  A. '32'
+       -  2 is converted to 2, then appended to 3
+    -  B. 1
+       -  3 is converted to Numver, then substracted by 2
+    -  C. 3
+       -  null is converted to 0, then added to 3
+    -  D. '3null'
+       -  null is converted to string, then appended to '3'
+    -  E. 4
+       -  true is converted to Number `1` then addede by 3
+    -  F. 0
+       -  both false and null are converted to 0
+    -  G. '3undefined'
+       -  undefined is converted to string and appended to '3'
+    -  H. NaN
+       -  "3" is converted to Number and undefined is converted to NaN, the resulf of addition is NaN
+15.  
+    -  A. true
+       -  '2' is converted to Number and 2 > 1
+    -  B. false
+       -  The first char of both operand is '2' and '1', thus Boolean('2' < '12') is false by dictionary comparison.
+    -  C. true
+       -  '2' is converted to Number, thus Boolean(2==2) is true
+    -  D. false
+       -  `2` and `'2'` are of different, thus it's false
+    -  E. false
+       -  `true` is converted to 1, and 1 != 2
+    -  F. true
+       -  Boolean(2) is true, thus it's true
 
-4.  `==` will convert two operands to have the same type before comparison; `===` is a more strict comparison operator where both value and type would be compared.
+16.  `==` will convert two operands to have the same type before comparison; `===` is a more strict comparison operator where both value and type would be compared.
 
-5.  The code would print "How are you?". For the first condition, `2 == true`, it converts `true` to `1`, thus the comparison is `false.
+17.  The code would print "How are you?". For the first condition, `2 == true`, it converts `true` to `1`, thus the comparison is `false.
 
-6.  ...
+18.  ans. in part1-question18.js
 
-7.  In this case, `doSomething` is passed into `modifyArray` as a argument. 
+19.  In this case, `doSomething` is passed into `modifyArray` as a argument. 
 
 - When execution, the for loop would be `newArr.push(doSomething(array[i], function (x) {return x*2}));`. `doSomething` would be called with first argument `array[i]` and second argument`function (x) {return x * 2}` (an anonymous function). 
 
-- Inside `doSomething`, the anonymous function receives parameters `num + 1` and returns `(num + 1) * 2`.
+- Inside `doSomething`, the anonymous function receives parameters `num + 2 and returns `(num + 2) * 2`.
  
--  Back to for loop, the program puts `newArr` the return value, `(num + 1) * 2`. So, with input `[1, 2, 3]`, the program outputs `[4, 6, 8]`.
+-  Back to for loop, the program puts `newArr` the return value, `(num + 2) * 2`. So, with input `[1, 2, 3]`, the program outputs `[6, 8, 10]`.
+
+
+20. part1-question20.js
+
+21. 1 4 3 2 .  (in separate line)
